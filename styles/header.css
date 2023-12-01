@@ -1,0 +1,57 @@
+@font-face {
+    font-family: static;
+    src: url(fonts/static/TiltNeon-Regular.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+    list-style: none;
+    color: white;
+    box-sizing: border-box;
+    font-family: static;
+    border: none;
+    outline: none;
+}
+
+body{
+    background-color: #0E131F;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+#nav-menu ul{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+#nav-menu ul li a{
+    padding: 15px 10px;
+    color: white;
+    font-size: 1.3em;
+}
+
+
+#nav-menu ul li a{
+    transition: all 0.5s;
+    border-bottom: 2px solid #ffffffe9;
+}
+#nav-menu a:hover{
+    border-bottom: 2px solid #8CD328;
+}
+#nav-menu ul li .active{
+    color: #8CD328;
+    border-bottom: 2px solid #8CD328;
+}
+

@@ -1,0 +1,25 @@
+body{
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+#text1{
+    margin-top: 5vh;
+    font-size: 4em;
+}
+#text2{
+    margin-top: 5px;
+    font-size: 3em;
+}
+#text3{
+    margin-top: 5px;
+    font-size: 2em;
+}
+#long-text{
+    margin-top: 10px;
+    font-size: 1em;
+}
+#link{
+    color: rgba(158, 238, 38, 0.874);
+}
+
+

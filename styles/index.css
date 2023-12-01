@@ -1,0 +1,103 @@
+#form{
+    margin-top: 10vh;
+    border-radius: 10px;
+    padding: 20px 50px 20px 50px;
+    min-width: 500px;
+    display: grid;
+    grid-template-columns: auto;    
+
+    border: 1px solid rgba(0, 255, 251, 0.452);
+    box-shadow: 0 4px 35px rgba(82, 103, 242, 0.211);
+}
+
+#form .form-camp{
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#form .form-camp span{ 
+    position: absolute;
+    align-self: flex-start;
+    pointer-events: none;
+    margin-left: 10px;
+    transition: all 0.2s ease;
+    font-size: 1.3em;
+}
+#form .form-camp input{
+    width: 100%;
+    outline: none;
+    border: 1px solid rgba(0, 255, 251, 0.89);
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 5px;
+    padding: 15px;
+    font-size: 0.8em;
+    text-align: left;
+    box-shadow: 0 4px 35px rgba(82, 103, 242, 0.082);
+    font-size: 1.2em;
+}
+
+
+#form .form-camp input:focus ~ span,
+#form .form-camp input:valid ~ span{
+    font-size: 1em;
+    transform: translateY(-25px);
+    margin-left: 15px;
+    background-color: #0E131F;
+    padding: 0 10px 0 10px;
+    border-left:  1px solid rgba(0, 255, 251, 0.89);
+    border-right:  1px solid rgba(0, 255, 251, 0.89);
+    color: rgba(0, 255, 251, 0.89);
+}
+
+
+#form #gender-option{
+    flex-flow: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    font-size: 1.3em;
+    
+}
+#form #gender-option input{
+    width: fit-content;
+}
+
+#form #container-submit{
+    position: relative;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 1px solid rgba(85, 105, 220, 0.575);
+}
+
+#form #container-submit::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(106, 0, 255, 0.89);
+    left: -100%;
+    transition: all 0.35s ease-in-out;
+    z-index: -1;
+}
+
+#form #container-submit:hover::before{
+    left: 0;
+}
+
+
+#form #container-submit #submit{
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;    
+    font-size: 1.2em;
+}

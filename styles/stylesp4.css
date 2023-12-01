@@ -1,0 +1,36 @@
+body{
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#title{
+    font-weight: lighter;
+    display: inline-block;
+}
+
+#html{
+    font-size: 1.5em;
+}
+#section_frontend{
+    color: rgb(175, 219, 235);
+}
+#section_backend{
+    color: rgb(106, 0, 255);
+}
+
+summary{
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+summary:hover{
+    color: rgb(157, 235, 217);
+}
+
+.sub{
+    color: rgb(53, 241, 147);
+}
+
+.info{
+    padding-left: 20px;
+}

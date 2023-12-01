@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>    
+
+    <header id="nav-menu">
+    </header>   
+    
+    <form id="form" method="POST"> 
+
+        <div class="form-camp">
+            <input type="text" id="name" name="name" required autocomplete="off">
+            <span for="name">Introduce tu Nombre</span>
+        </div>
+
+        <div class="form-camp">
+            <input type="text" id="lastname" name="lastname" required autocomplete="off">
+            <span for="lastname">Introduce tus Apellidos</span>
+        </div>
+
+        <div class="form-camp">
+            <input type="password" id="pass" name="password" required autocomplete="off">
+            <span for="pass">Introduce tu Password</span>
+        </div>
+
+        <div class="form-camp">
+            <input type="tel" id="number" name="number" required autocomplete="off">
+            <span for="number">Introduce tu Teléfono</span>
+        </div>
+
+        <div class="form-camp">
+            <input type="text" id="email" name="mail" required autocomplete="off">
+            <span for="email">Introduce tu Email</span>
+        </div>   
+
+        <div id="gender-option" class="form-camp">
+            <label for="male">Masculino:</label>
+            <input type="radio" id="male" name="Gender" value="H" required>
+            <label for="female">Femenino:</label>
+            <input type="radio" id="female" name="Gender" value="M" required>
+        </div>
+
+        <div id="container-submit">
+            <input type="submit" id="submit">
+        </div>
+
+    </form>
+    <script src="js/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
